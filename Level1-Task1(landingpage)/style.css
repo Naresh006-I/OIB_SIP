@@ -1,69 +1,93 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>LifeLine Healthcare</title>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f4f9fc;
+}
 
-<!-- Link CSS -->
-<link rel="stylesheet" href="style.css">
-</head>
+/* ===== NAVBAR ===== */
+nav{
+    background:white;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
 
-<body>
+nav h2{
+    color:#0a9396;
+}
 
-<!-- ===== NAVBAR ===== -->
-<nav>
-    <h2>💚 LifeLine</h2>
-    <div>
-        <a href="#">Home</a>
-        <a href="#">Services</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-    </div>
-</nav>
+nav a{
+    text-decoration:none;
+    color:#333;
+    margin-left:25px;
+    font-weight:bold;
+}
 
-<!-- ===== HERO SECTION ===== -->
-<section class="hero">
-    <div class="hero-text">
-        <h1>Your Health, Our Priority</h1>
-        <p>
-            LifeLine provides trusted healthcare services with experienced doctors,
-            modern technology, and compassionate care.
-        </p>
-        <button onclick="bookAppointment()">Book Appointment</button>
-    </div>
+/* ===== HERO ===== */
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:60px 40px;
+    background:#e0f2f1;
+}
 
-    <img src="https://i.postimg.cc/rwpGJDCw/doctor.jpg" alt="Doctor">
-</section>
+.hero-text{
+    width:50%;
+}
 
-<!-- ===== SERVICES ===== -->
-<section class="section">
-    <h2>Our Services</h2>
+.hero-text h1{
+    color:#005f73;
+    font-size:36px;
+}
 
-    <div class="services">
-        <div class="card">
-            <h3>Online Consultation</h3>
-            <p>Connect with doctors anytime from anywhere.</p>
-        </div>
+.hero-text p{
+    margin-top:15px;
+    font-size:18px;
+}
 
-        <div class="card">
-            <h3>Health Reports</h3>
-            <p>Access your medical reports securely online.</p>
-        </div>
+.hero-text button{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    background:#0a9396;
+    color:white;
+    font-size:16px;
+    border-radius:6px;
+    cursor:pointer;
+}
 
-        <div class="card">
-            <h3>24/7 Support</h3>
-            <p>We are available round the clock for emergencies.</p>
-        </div>
-    </div>
-</section>
+.hero img{
+    width:380px;
+}
 
-<!-- ===== FOOTER ===== -->
-<footer>
-    © 2026 LifeLine Healthcare | Level-1 Project
-</footer>
+/* ===== SERVICES ===== */
+.section{
+    padding:50px 40px;
+    text-align:center;
+}
 
-<!-- Link JavaScript -->
-<script src="script.js"></script>
+.services{
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    margin-top:30px;
+}
 
-</body>
-</html>
+.card{
+    background:white;
+    padding:25px;
+    width:250px;
+    border-radius:10px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* ===== FOOTER ===== */
+footer{
+    background:#005f73;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
